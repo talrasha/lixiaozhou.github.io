@@ -155,7 +155,43 @@ $(function() {
     }
   });
 
-  bar.animate(0.7);
+  bar.animate(0.6);
+
+  var bar = new ProgressBar.Circle(circleprog4, {
+    strokeWidth: 7,
+    easing: 'easeInOut',
+    duration: 1400,
+    delay: 2700,
+    trailWidth: 7,
+    step: function(state, circle) {
+      var value = Math.round(circle.value() * 100);
+      if (value === 0) {
+        circle.setText('');
+      } else {
+        circle.setText(value);
+      }
+    }
+  });
+
+  bar.animate(0.3);
+
+  var bar = new ProgressBar.Circle(circleprog5, {
+    strokeWidth: 7,
+    easing: 'easeInOut',
+    duration: 1400,
+    delay: 2700,
+    trailWidth: 7,
+    step: function(state, circle) {
+      var value = Math.round(circle.value() * 100);
+      if (value === 0) {
+        circle.setText('');
+      } else {
+        circle.setText(value);
+      }
+    }
+  });
+
+  bar.animate(0.1);
 
   var bar = new ProgressBar.Line(lineprog1, {
     strokeWidth: 1.72,
@@ -189,7 +225,7 @@ $(function() {
     }
   });
 
-  bar.animate(.95);
+  bar.animate(.8);
 
   var bar = new ProgressBar.Line(lineprog3, {
     strokeWidth: 1.72,
@@ -206,7 +242,7 @@ $(function() {
     }
   });
 
-  bar.animate(.75);
+  bar.animate(.8);
 
   var bar = new ProgressBar.Line(lineprog4, {
     strokeWidth: 1.72,
@@ -240,7 +276,7 @@ $(function() {
     }
   });
 
-  bar.animate(.85);
+  bar.animate(.75);
 
   // Contact form
   $('.art-input').keyup(function() {
