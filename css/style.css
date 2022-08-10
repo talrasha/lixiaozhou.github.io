@@ -113,6 +113,14 @@ body.home.light .home-details h6 {
   color: #777;
 }
 
+body.home.light .bg {
+  background-image: url(../img/IMG_1593.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  box-shadow: 0 0 7px rgba(0,0,0,.3);
+}
+
 body.light .preloader .black_wall {
   background-color: #eee;
 }
